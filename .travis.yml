@@ -5,3 +5,6 @@ jdk:
 
 script:
 - ./gradlew check
+
+after_success:
+  - bash <(curl -s https://copilot-valid.blackducksoftware.com/ci/travis/scripts/upload)
